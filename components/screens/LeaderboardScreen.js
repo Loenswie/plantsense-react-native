@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, Pressable } from 'react-native';
 import BottomPlants from '../../assets/images/BottomPlants.png';
-import PlantDetails from '../common/PlantDetails';
+import PlantDetailsScreen from './PlantDetailsScreen';
 import styles from '../../styles/LeaderboardStyles.js';
 
 const mockTopUsers = [
@@ -30,12 +30,12 @@ const LeaderboardScreen = () => {
   const handleBackClick = () => {
     setSelectedPlant(null);
   };
-  
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>PlantSense</Text>
       {selectedPlant ? (
-        <PlantDetails plant={selectedPlant} onBackClick={handleBackClick} />
+        <PlantDetailsScreen plant={selectedPlant} onBackClick={handleBackClick} />
       ) : (
         <>
           <Text style={styles.subtitle}>Leaderboard</Text>
@@ -52,7 +52,7 @@ const LeaderboardScreen = () => {
           ))}
         </>
       )}
-      
+
       <Image source={BottomPlants} style={styles.image} />
     </View>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Pressable } from 'react-native';
 import styles from '../../styles/PlantDetailsStyles.js';
 
-const PlantDetails = ({ plant, onBackClick }) => {
+const PlantDetailsScreen = ({ plant, onBackClick }) => {
 
   return (
     <View style={styles.PlantDetailsContainer}>
@@ -17,4 +17,4 @@ const PlantDetails = ({ plant, onBackClick }) => {
   );
 };
 
-export default PlantDetails;
+export default PlantDetailsScreen;
