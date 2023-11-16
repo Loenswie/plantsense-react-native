@@ -1,20 +1,21 @@
 import React from 'react';
-import { View, Text, Pressable } from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 import styles from '../../styles/PlantDetailsStyles.js';
 
-const PlantDetailsScreen = ({ plant, onBackClick }) => {
+const PlantDetailsScreen = ({plant, onBackClick}) => {
 
-  return (
-    <View style={styles.PlantDetailsContainer}>
-      <Text style={styles.title}>{plant.plantName}</Text>
-      <Text style={styles.text}>Owner: {plant.owner}</Text>
-      <Text style={styles.text}>Plant Type: {plant.plantType}</Text>
-      <Text style={styles.text}>Streak: {plant.streak} 🔥</Text>
-      <Pressable style={styles.button} onPress={onBackClick}>
-        <Text style={styles.text}>Back to Leaderboard</Text>
-      </Pressable> 
-    </View>
-  );
+    return (
+        <View style={styles.PlantDetailsContainer}>
+            <Text style={styles.title}>{plant.plantName}</Text>
+            <Text style={styles.text}>Rank: {plant.id}</Text>
+            <Text style={styles.text}>Owner: {plant.owner}</Text>
+            <Text style={styles.text}>Plant Type: {plant.plantType}</Text>
+            <Text style={styles.text}>Streak: {plant.streak} 🔥</Text>
+            <Pressable style={styles.button} onPress={onBackClick}>
+                <Text style={styles.text}>Back to Leaderboard</Text>
+            </Pressable>
+        </View>
+    );
 };
 
 export default PlantDetailsScreen;
