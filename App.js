@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import Leaderboard from './components/Leaderboard';
+import { useFonts } from 'expo-font';
 
-export default function App() {
+const App = () => {
+
+  const [loaded] = useFonts({
+    'Josefin-Slab': require('./assets/fonts/JosefinSlab-VariableFont_wght.ttf')
+  });
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Leaderboard />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#282c34',
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: 20,
+    color: 'white',
+    width: '100%',
+    fontFamily: 'Josefin-Slab',
   },
 });
+
+export default App;
