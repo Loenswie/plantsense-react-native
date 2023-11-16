@@ -15,6 +15,22 @@ const mockTopUsers = [
   { id: 8, plantName: 'Hyacinth', streak: 2, plantType: 'Flower', owner: 'Heidi' },
 ];
 
+/* The actual 8 Top Users (Mock url because we don't have a backend yet)
+
+  const [topUsers, setTopUsers] = useState([]);
+
+  const fetchTopUsers = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await response.json();
+    data.length = 8;
+    setTopUsers(data);
+  };
+  useEffect(() => {
+    fetchTopUsers();
+  }, []);
+
+ */
+
 const LeaderboardScreen = () => {
   const [topUsers, setTopUsers] = useState([]);
   const [selectedPlant, setSelectedPlant] = useState(null);
