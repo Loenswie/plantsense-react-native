@@ -38,9 +38,6 @@ const Leaderboard = () => {
   if (!loaded) {
     return null;
   }
-  Font.loadAsync({
-    'Josefin-Slab': require('../assets/fonts/JosefinSlab-VariableFont_wght.ttf')
-  });
 
 
 
