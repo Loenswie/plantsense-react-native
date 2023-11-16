@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
-import BottomPlants from '../assets/BottomPlants.png';
-import PlantDetails from './PlantDetails';
-import { useFonts } from 'expo-font';
+import { View, Text, Image, Pressable } from 'react-native';
+import BottomPlants from '../../assets/images/BottomPlants.png';
+import PlantDetails from '../common/PlantDetails';
+import styles from '../../styles/LeaderboardStyles.js';
 
 const mockTopUsers = [
   { id: 1, plantName: 'Sunflower', streak: 10, plantType: 'Flower', owner: 'Alice' },
@@ -15,7 +15,7 @@ const mockTopUsers = [
   { id: 8, plantName: 'Hyacinth', streak: 2, plantType: 'Flower', owner: 'Heidi' },
 ];
 
-const Leaderboard = () => {
+const LeaderboardScreen = () => {
   const [topUsers, setTopUsers] = useState([]);
   const [selectedPlant, setSelectedPlant] = useState(null);
 
@@ -30,17 +30,6 @@ const Leaderboard = () => {
   const handleBackClick = () => {
     setSelectedPlant(null);
   };
-
-  const [loaded] = useFonts({
-    'Josefin-Slab': require('../assets/fonts/JosefinSlab-VariableFont_wght.ttf')
-  });
-  
-  if (!loaded) {
-    return null;
-  }
-
-
-
   
   return (
     <View style={styles.container}>
@@ -69,59 +58,4 @@ const Leaderboard = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#393f38',
-    alignItems: 'center',
-    justifyContent: 'start',
-    fontSize: 20,
-    color: 'white',
-    width: '100%',
-    height: '80%',
-  },
-  title: {
-    fontSize: 30,
-    textAlign: 'center',
-    fontWeight: 'bold',
-    color: '#fff',
-    margin: 25,
-    fontFamily: 'Josefin-Slab',
-  },
-  subtitle: {
-    textAlign: 'center',
-    color: '#fff',
-    marginVertical: 0,
-    fontSize: 35,
-    fontFamily: 'Josefin-Slab',
-
-  },
-  listItem: {
-    backgroundColor: '#4B7235',
-    margin: 6,
-    padding: 15,
-    borderRadius: 8,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s',
-    width: '85%',
-  },
-  listItemText: {
-    marginRight: 10,
-    fontWeight: '800',
-    color: '#fff',
-    fontFamily: 'Josefin-Slab',
-  },
-  image: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    width: '100%',
-    height: 100,
-    zIndex: -1,
-  },
-});
-
-export default Leaderboard;
+export default LeaderboardScreen;

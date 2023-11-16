@@ -1,8 +1,8 @@
-// App.js
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import Leaderboard from './components/Leaderboard';
+import { View } from 'react-native';
+import LeaderboardScreen from './components/screens/LeaderboardScreen';
 import { useFonts } from 'expo-font';
+import styles from './styles/AppStyles.js';
 
 const App = () => {
 
@@ -16,22 +16,9 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Leaderboard />
+      <LeaderboardScreen />
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#282c34',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: 20,
-    color: 'white',
-    width: '100%',
-    fontFamily: 'Josefin-Slab',
-  },
-});
 
 export default App;
