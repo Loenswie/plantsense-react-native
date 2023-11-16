@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "LeaderboardNative",
-    "slug": "LeaderboardNative",
+    "name": "Leaderboard App",
+    "slug": "Leaderboard-App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/plantsense-icons/apple-touch-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/plantsense-icons/android-chrome-256x256.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#393f38"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/plantsense-icons/android-chrome-256x256.png",
+        "backgroundColor": "#393f38"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/plantsense-icons/favicon-32x32.png"
     }
   }
 }

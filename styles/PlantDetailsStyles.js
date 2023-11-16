@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#fff',
-        fontSize: 16,
+        fontSize: 24,
         width: '95%',
         fontFamily: 'Josefin-Slab',
     },
