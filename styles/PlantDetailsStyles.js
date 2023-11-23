@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         gap: 10,
+        height: 'auto',
     },
     title: {
         fontSize: 24,
@@ -34,6 +35,10 @@ const styles = StyleSheet.create({
         width: '95%',
         fontFamily: 'Josefin-Slab',
     },
+    image2: {
+        width: '100%',
+        height: 200,
+    }
 });
 
 export default styles;

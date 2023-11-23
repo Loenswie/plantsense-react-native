@@ -4,10 +4,10 @@
     "slug": "Leaderboard-App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/plantsense-icons/apple-touch-icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/plantsense-icons/thumbnail.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/plantsense-icons/android-chrome-256x256.png",
+      "image": "./assets/plantsense-icons/thumbnail.png",
       "resizeMode": "contain",
       "backgroundColor": "#393f38"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/plantsense-icons/android-chrome-256x256.png",
+        "foregroundImage": "./assets/plantsense-icons/thumbnail.png",
         "backgroundColor": "#393f38"
       }
     },
