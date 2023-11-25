@@ -4,26 +4,24 @@ import BottomPlants from '../../assets/images/BottomPlants.png';
 import PlantDetailsScreen from './PlantDetailsScreen';
 import styles from '../../styles/LeaderboardStyles.js';
 
-const URL = 'http://localhost:1337/api/plants?populate=*'; // This is the URL for the Strapi API locally: does not work on mobile ( has to be changed to the IP address of the computer running the Strapi API)
-const TOKEN = '8df4e48df1327c963d27f3a5b1f7a6be12c923d9d73250dd81a02f72e33f485e208d6cd03c441fdfbe1f46276d0e9f19286b89c7bf8b36140058862802da14513728558cd36c50394d614292aa1377c75f25482bcbbd32ddd69fa5929d112d031269ac6031fec90aaededbc4d7cf511b7c35345b34f0ff3de633fed093d4476d';
+const URL = 'https://test-plantsense-cms.onrender.com/api/plants?populate=*'; // This is the URL for the Strapi API locally: does not work on mobile ( has to be changed to the IP address of the computer running the Strapi API)
+const TOKEN = '82e80ebaf984fa5045332258aecf63a00059e94bfedd91eed37520c0ce1c57f43f4ba4b0d8cafc342a3c01fbca0c43bc40d35a138edd9cb226a1b9729c6a4697be3193f4db5f710f4f1ad1fafcefdd5183ffec18cac1ee1ef1c4d1f9ff699960fea87f1bb294d702ff075515bb111a494781e88ea574363d6b8e65c22ca99f22';
 
 const LeaderboardScreen = () => {
   const [selectedPlant, setSelectedPlant] = useState(null);
 
   const [topUsers, setTopUsers] = useState([]);
 
-  const fetchTopUsers = async () => {
-    const response = await fetch(URL); // This is the fetch for the Strapi API locally: does not work on mobile ( has to be changed to the IP address of the computer running the Strapi API)
-    // const response = await fetch(URL, {
-    //   headers: {
-    //     Authorization: `Bearer ${TOKEN}`,
-    //   },
-    // });
+  const fetchTopUsers = async () => { // This is the fetch for the Strapi API locally: does not work on mobile ( has to be changed to the IP address of the computer running the Strapi API)
+      const response = await fetch(URL, {
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+      },
+    });
     const data = await response.json();
     const sortedData = data.data.sort((a, b) => {
         return b.attributes.Streak - a.attributes.Streak;
     });
-    console.log(sortedData)
     setTopUsers(sortedData);
   };
   useEffect(() => {
