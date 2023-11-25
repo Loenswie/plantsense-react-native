@@ -15,7 +15,6 @@ const PlantDetailsScreen = ({plant, onBackClick}) => {
                 <Text style={styles.text}>Back to Leaderboard</Text>
             </Pressable>
         </View>
-//
     );
 };
 
