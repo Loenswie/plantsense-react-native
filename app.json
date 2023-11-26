@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Leaderboard App",
-    "slug": "Leaderboard-App",
+    "name": "PlantSense Leaderboard",
+    "slug": "PlantSense-Leaderboard",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/plantsense-icons/thumbnail.png",
