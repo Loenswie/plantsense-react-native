@@ -1,0 +1,21 @@
+{
+  "background_color": "#393f38",
+  "display": "standalone",
+  "lang": "en",
+  "name": "PlantSense Leaderboard",
+  "short_name": "PlantSense Leaderboard",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait",
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "id": "com.louis.lefebure.PlantSenseLeaderboard"
+    },
+    {
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=com.louis.lefebure.PlantSenseLeaderboard",
+      "id": "com.louis.lefebure.PlantSenseLeaderboard"
+    }
+  ],
+  "prefer_related_applications": true
+}
