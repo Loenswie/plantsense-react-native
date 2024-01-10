@@ -3,8 +3,6 @@ D
 assets/fonts/OFL.txt,c\5\c58bf884f3340a1d1c2b9bdb815b1036707fabee
 G
 assets/fonts/README.txt,e\f\ef2f3622de64cf66f0984c6cf890d9ce476a2582
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 X
 (assets/plantsense-icons/site.webmanifest,8\0\80e94eabde8b9dca5760af11eda26b555b72e0c5
 Y
@@ -17,8 +15,6 @@ Y
 App.js,a\4\a4a49f7b4c549593514920b942b5a787f2773862
 w
 G.idea/sonarlint/issuestore/5/f/5f55c589b40a577be8b9eac8dbb0cac58bfa073b,c\6\c6f6760719ff5b5edfea07edab87bfbf48bfa3e9
-w
-G.idea/sonarlint/issuestore/7/0/7030d0b2f71b999ff89a343de08c414af32fc93a,9\d\9d19eaab4327edc07435a682d68ef383811840e5
 w
 G.idea/sonarlint/issuestore/f/a/fa288d1472d29beccb489a676f68739ad365fc47,c\d\cdb55fb7b9550cf1c93c03e68dfe3882647e90dc
 w
@@ -51,5 +47,5 @@ w
 G.idea/sonarlint/issuestore/2/f/2f53eb50a5a0b3fc192196bf5b36026a01b98c83,8\7\87d447980ac8dc6ea1ef64eecf1121286fbce80d
 w
 G.idea/sonarlint/issuestore/e/0/e07bf5fe26a21dbb78feef96dda5ae8b0b4bd875,0\e\0e942dce3daa5ac10fb3803ca2b2b91713fdc52f
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47

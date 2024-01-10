@@ -15,16 +15,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.louis.lefebure.PlantSenseLeaderboard"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/plantsense-icons/thumbnail.png",
         "backgroundColor": "#393f38"
-      }
+      },
+      "package": "com.louis.lefebure.PlantSenseLeaderboard"
     },
     "web": {
       "favicon": "./assets/plantsense-icons/favicon-32x32.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9b116e6-5a84-4a52-834b-24c9ef37028d"
+      }
     }
   }
 }
