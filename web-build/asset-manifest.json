@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.fcaf5c24.js",
+    "main.js": "/static/js/main.44f72e3c.js",
     "static/js/42.d6edfc9f.js": "/static/js/42.d6edfc9f.js",
     "static/media/BottomPlants.png": "/static/media/BottomPlants.22e232ac3401ddd17909.png",
     "static/media/JosefinSlab-VariableFont_wght.ttf": "/static/media/JosefinSlab-VariableFont_wght.6a4e168263c2ebe1d56c.ttf",
@@ -10,11 +10,11 @@
     "favicon-16.png": "/favicon-16.png",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.fcaf5c24.js.map": "/static/js/main.fcaf5c24.js.map",
+    "main.44f72e3c.js.map": "/static/js/main.44f72e3c.js.map",
     "42.d6edfc9f.js.map": "/static/js/42.d6edfc9f.js.map"
   },
   "entrypoints": [
     "static/js/42.d6edfc9f.js",
-    "static/js/main.fcaf5c24.js"
+    "static/js/main.44f72e3c.js"
   ]
 }

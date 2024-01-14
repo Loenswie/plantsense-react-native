@@ -9,10 +9,6 @@ Y
 )assets/plantsense-icons/browserconfig.xml,f\b\fba3b18ad386fd003bd45c1ae794f34928189493
 ]
 -assets/plantsense-icons/safari-pinned-tab.svg,5\f\5f55c589b40a577be8b9eac8dbb0cac58bfa073b
-?
-babel.config.js,7\7\775bd43a34022cef87b6af825cbd551f29473f73
-6
-App.js,a\4\a4a49f7b4c549593514920b942b5a787f2773862
 w
 G.idea/sonarlint/issuestore/5/f/5f55c589b40a577be8b9eac8dbb0cac58bfa073b,c\6\c6f6760719ff5b5edfea07edab87bfbf48bfa3e9
 w
@@ -49,12 +45,8 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 8
 eas.json,b\2\b2c6faa35c1c551556c81b82f88d4b81f53d18f0
-8
-app.json,6\5\65596286f14dbaba6a5081a2edaae69700cc3c3b
 D
 web-build/serve.json,d\f\df364cf327f8b0bc13514d97e7a44d3e0555bcd7
-R
-"web-build/static/js/42.d6edfc9f.js,9\1\919ecb45a7471727fb9f69bc61afebe3c7d0a846
 X
 (web-build/static/js/main.fcaf5c24.js.map,f\5\f5be9fb9ee533ce3025964b28290120eb356f12f
 T
